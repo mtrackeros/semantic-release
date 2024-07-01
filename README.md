@@ -4,8 +4,8 @@
   <a href="https://github.com/semantic-release/semantic-release/discussions">
     <img alt="Join the community on GitHub Discussions" src="https://img.shields.io/badge/Join%20the%20community-on%20GitHub%20Discussions-blue">
   </a>
-  <a href="https://github.com/semantic-release/semantic-release/actions?query=workflow%3ATest+branch%3Amaster">
-    <img alt="Build states" src="https://github.com/semantic-release/semantic-release/workflows/Test/badge.svg">
+  <a href="https://github.com/semantic-release/semantic-release/actions/workflows/test.yml">
+    <img alt="Build states" src="https://github.com/semantic-release/semantic-release/actions/workflows/test.yml/badge.svg">
   </a>
   <a href="https://securityscorecards.dev/viewer/?uri=github.com/semantic-release/semantic-release">
     <img alt="OpenSSF Scorecard" src="https://api.securityscorecards.dev/projects/github.com/semantic-release/semantic-release/badge">
@@ -73,7 +73,7 @@ This way no human is directly involved in the release process and the releases a
 
 ### Triggering a release
 
-For each new commit added to one of the release branches (for example: `master`, `next`, `beta`), with `git push` or by merging a pull request or merging from another branch, a CI build is triggered and runs the `semantic-release` command to make a release if there are codebase changes since the last release that affect the package functionalities.
+For each new commit added to one of the release branches (for example: `master`, `main`, `next`, `beta`), with `git push` or by merging a pull request or merging from another branch, a CI build is triggered and runs the `semantic-release` command to make a release if there are codebase changes since the last release that affect the package functionalities.
 
 **semantic-release** offers various ways to control the timing, the content and the audience of published releases.
 See example workflows in the following recipes:
